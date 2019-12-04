@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Test Page</title>
+</head>
+<body>
+    <form onsubmit="connection(event)">
+        <label>Port</label>
+        <input name="port" required/>
+        <br/>
+
+        <label>Baud Rate</label>
+        <input name="baudRate" type="number"/>
+        <br/>
+
+        <label>Data Bits</label>
+        <input name="dataBits" type="number"/>
+        <br/>
+
+        <label>Stop Bits</label>
+        <input name="stopBits" type="number"/>
+        <br/>
+
+        <label>Parity</label>
+        <input name="parity"/>
+        <br/>
+
+        <button id="btn-conecction" type="submit">CONNECT</button>
+    </form>
+    
+    <hr/>
+    <textarea id="send-data"></textarea>
+    <button onclick="sendMessage()">SEND</button>
+    
+    <hr/>
+    <pre id="received-data" disabled></pre>
+
+    <hr/>
+    <button onclick="disconnect()">DISCONNECT</button>
+
+    <script src='test.js'></script>
+</body>
+</html>

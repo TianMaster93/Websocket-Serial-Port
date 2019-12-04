@@ -1,0 +1,29 @@
+{
+  "name": "websocket-serial-port",
+  "version": "1.0.0",
+  "description": "Full-duplex communication  between SerialPort and WebSocket",
+  "scripts": {
+    "compile-ts": "tsc",
+    "compile-run": "tsc && node ./dist/server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CbaSoft93/Websocket-Serial-Port.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CbaSoft93/Websocket-Serial-Port/issues"
+  },
+  "homepage": "https://github.com/CbaSoft93/Websocket-Serial-Port#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "serialport": "^8.0.5",
+    "ws": "^7.2.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.2",
+    "@types/serialport": "^7.0.4",
+    "@types/ws": "^6.0.4"
+  }
+}
