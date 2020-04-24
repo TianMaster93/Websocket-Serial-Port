@@ -24,9 +24,11 @@ export class SerialRequest {
         if (!queryPairs) {
             return;
         }
-        const parts = queryPairs.split('=');
-        const name  = decodeURI(parts[0]);
-        const value = decodeURI(parts[1]);
+        const parts  = queryPairs.split('=');
+        const name   = decodeURI(parts[0]);
+        const sValue = decodeURI(parts[1]);
+        const nValue = parseInt(sValue);
+        const value  = isNaN(nValue) ? sValue : nValue;
 
         if (name && value) {
             output[name] = value;
